@@ -18,10 +18,11 @@
 ## Packages
 
 <!-- START-PACKAGES-TABLE -->
-| Package                                                                                                                                    | Status                                                                                | Description                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [![@xhyrom/configs](https://img.shields.io/npm/v/@xhyrom/configs?label=%40xhyrom%2Fconfigs&style=flat)](https://npmjs.org/@xhyrom/configs) | [![wip](https://img.shields.io/badge/status-wip-red.svg?style=flat)](#status-meaning) | Personal configurations for my projects, currently for TypeScript, Prettier and tsup |
-| [![dummy](https://img.shields.io/npm/v/dummy?label=dummy&style=flat)](https://npmjs.org/dummy)                                             | [![wip](https://img.shields.io/badge/status-wip-red.svg?style=flat)](#status-meaning) | This is a dummy package, it does nothing.                                            |
+| Package                                                                                                                                                                | Status                                                                                | Description                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [![@xhyrom/colour-palette](https://img.shields.io/npm/v/@xhyrom/colour-palette?label=%40xhyrom%2Fcolour-palette&style=flat)](https://npmjs.org/@xhyrom/colour-palette) | [![wip](https://img.shields.io/badge/status-wip-red.svg?style=flat)](#status-meaning) | A colour palette (branding)                                                          |
+| [![@xhyrom/configs](https://img.shields.io/npm/v/@xhyrom/configs?label=%40xhyrom%2Fconfigs&style=flat)](https://npmjs.org/@xhyrom/configs)                             | [![wip](https://img.shields.io/badge/status-wip-red.svg?style=flat)](#status-meaning) | Personal configurations for my projects, currently for TypeScript, Prettier and tsup |
+| [![dummy](https://img.shields.io/npm/v/dummy?label=dummy&style=flat)](https://npmjs.org/dummy)                                                                         | [![wip](https://img.shields.io/badge/status-wip-red.svg?style=flat)](#status-meaning) | This is a dummy package, it does nothing.                                            |
 <!-- END-PACKAGES-TABLE -->
 
 ## Status meaning

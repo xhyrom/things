@@ -11,7 +11,11 @@ importers:
         specifier: latest
         version: 16.0.5
 
-  scripts/generating:
+  packages/configs: {}
+
+  packages/dummy: {}
+
+  scripts/readme-generator:
     dependencies:
       markdown-table:
         specifier: ^3.0.3
