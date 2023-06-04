@@ -1,0 +1,8 @@
+{
+  "name": "dummy",
+  "description": "This is a dummy package, it does nothing.",
+  "version": "0.0.0",
+  "things": {
+    "status": "wip"
+  }
+}
