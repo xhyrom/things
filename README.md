@@ -17,9 +17,11 @@
 
 ## Packages
 
-| Package                                                                                                                                | Status                                                                                              | Description                                           |
-| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| [![@xhyrom/semver](https://img.shields.io/npm/v/@xhyrom/semver?label=%40xhyrom%2Fsemver&style=flat)](https://npmjs.org/@xhyrom/semver) | [![stable](https://img.shields.io/badge/status-stable-brightgreen.svg?style=flat)](#status-meaning) | Simple library for parsing, comparing semver versions |
+<!-- START-PACKAGES-TABLE -->
+| Package                                                                                                              | Status                                                                                | Description                               |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [![dummy](https://img.shields.io/npm/v/@xhyrom/semver?label=%40xhyrom%2Fsemver&style=flat)](https://npmjs.org/dummy) | [![wip](https://img.shields.io/badge/status-wip-red.svg?style=flat)](#status-meaning) | This is a dummy package, it does nothing. |
+<!-- END-PACKAGES-TABLE -->
 
 ## Status meaning
 
