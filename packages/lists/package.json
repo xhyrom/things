@@ -1,0 +1,8 @@
+{
+  "name": "lists",
+  "description": "This package contains specific implementations of lists",
+  "version": "0.1.0",
+  "things": {
+    "status": "wip"
+  }
+}
