@@ -11,5 +11,13 @@
         "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
+  },
+  "targetDefaults": {
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "noBuild": true
+      }
+    }
   }
 }

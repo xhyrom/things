@@ -4,6 +4,9 @@ importers:
 
   .:
     devDependencies:
+      ngx-deploy-npm:
+        specifier: ^6.0.0
+        version: 6.0.0(@nx/devkit@16.3.2)(tslib@2.5.0)
       nx:
         specifier: 16.3.2
         version: 16.3.2
@@ -11,9 +14,13 @@ importers:
         specifier: latest
         version: 16.0.5
 
+  packages/colour-palette: {}
+
   packages/configs: {}
 
   packages/dummy: {}
+
+  packages/lists: {}
 
   scripts/readme-generator:
     dependencies:
@@ -44,6 +51,14 @@ packages:
       fastq: 1.15.0
     dev: true
 
+  /@nrwl/devkit@16.3.2(nx@16.3.2):
+    resolution: {integrity: sha512-EiDwVIvh6AcClXv22Q7auQh7Iy/ONISEFWzTswy/J6ZmVGCQesbiwg4cGV0MKiScr+awdVzqyNey+wD6IR5Lkw==}
+    dependencies:
+      '@nx/devkit': 16.3.2(nx@16.3.2)
+    transitivePeerDependencies:
+      - nx
+    dev: true
+
   /@nrwl/nx-cloud@16.0.5:
     resolution: {integrity: sha512-1p82ym8WE9ziejwgPslstn19iV/VkHfHfKr/5YOnfCHQS+NxUf92ogcYhHXtqWLblVZ9Zs4W4pkSXK4e04wCmQ==}
     dependencies:
@@ -61,6 +76,20 @@ packages:
       - '@swc-node/register'
       - '@swc/core'
       - debug
+    dev: true
+
+  /@nx/devkit@16.3.2(nx@16.3.2):
+    resolution: {integrity: sha512-1ev3EDm2Sx/ibziZroL1SheqxDR7UgC49tkBgJz1GrQLQnfdhBYroCPSyBSWGPMLHjIuHb3+hyGSV1Bz+BIYOA==}
+    peerDependencies:
+      nx: '>= 15 <= 17'
+    dependencies:
+      '@nrwl/devkit': 16.3.2(nx@16.3.2)
+      ejs: 3.1.9
+      ignore: 5.2.4
+      nx: 16.3.2
+      semver: 7.3.4
+      tmp: 0.2.1
+      tslib: 2.5.3
     dev: true
 
   /@nx/nx-darwin-arm64@16.3.2:
@@ -208,6 +237,10 @@ packages:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: true
 
+  /async@3.2.4:
+    resolution: {integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==}
+    dev: true
+
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
@@ -253,6 +286,12 @@ packages:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
+    dev: true
+
+  /brace-expansion@2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+    dependencies:
+      balanced-match: 1.0.2
     dev: true
 
   /braces@3.0.2:
@@ -352,6 +391,14 @@ packages:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
     dev: true
 
+  /ejs@3.1.9:
+    resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+    dependencies:
+      jake: 10.8.7
+    dev: true
+
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
     dev: true
@@ -407,6 +454,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       escape-string-regexp: 1.0.5
+    dev: true
+
+  /filelist@1.0.4:
+    resolution: {integrity: sha512-w1cEuf3S+DrLCQL7ET6kz+gmlJdbq9J7yXCSjK/OZCPA+qEN1WyF4ZAf0YYJa4/shHJra2t/d/r8SV4Ji+x+8Q==}
+    dependencies:
+      minimatch: 5.1.6
     dev: true
 
   /fill-range@7.0.1:
@@ -551,6 +604,17 @@ packages:
       is-docker: 2.2.1
     dev: true
 
+  /jake@10.8.7:
+    resolution: {integrity: sha512-ZDi3aP+fG/LchyBzUM804VjddnwfSfsdeYkwt8NcbKRvo4rFkjhs456iLFn3k2ZUWvNe4i48WACDbza8fhq2+w==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      async: 3.2.4
+      chalk: 4.1.2
+      filelist: 1.0.4
+      minimatch: 3.1.2
+    dev: true
+
   /js-yaml@3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
     hasBin: true
@@ -636,6 +700,19 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
+  /minimatch@3.1.2:
+    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: true
+
+  /minimatch@5.1.6:
+    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
@@ -659,6 +736,17 @@ packages:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
     engines: {node: '>=10'}
     hasBin: true
+    dev: true
+
+  /ngx-deploy-npm@6.0.0(@nx/devkit@16.3.2)(tslib@2.5.0):
+    resolution: {integrity: sha512-gfj4ZIAguZ4JJF/WOIGYktwi1BKtHRYz1TUJV4a5qBwRaBunSu1/oW9K+sApwGfegMtrblDjMoLl10OZWgqx+A==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@nx/devkit': ^16.0.0
+      tslib: 2.5.0
+    dependencies:
+      '@nx/devkit': 16.3.2(nx@16.3.2)
+      tslib: 2.5.0
     dev: true
 
   /node-addon-api@3.2.1:
@@ -963,6 +1051,10 @@ packages:
       json5: 2.2.3
       minimist: 1.2.8
       strip-bom: 3.0.0
+    dev: true
+
+  /tslib@2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: true
 
   /tslib@2.5.3:
