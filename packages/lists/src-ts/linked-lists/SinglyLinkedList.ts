@@ -108,6 +108,7 @@ export class SinglyLinkedList<T> implements List<T> {
 
     return size;
   }
+
   toArray() {
     const arr: T[] = [];
 
@@ -121,6 +122,7 @@ export class SinglyLinkedList<T> implements List<T> {
 
     return arr;
   }
+
   clear(): void {
     throw new Error("Method not implemented.");
   }
