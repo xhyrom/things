@@ -3,6 +3,6 @@
   "description": "Personal configurations for my projects, currently for TypeScript, Prettier and tsup",
   "version": "0.1.0",
   "things": {
-    "status": "wip"
+    "status": "beta"
   }
 }

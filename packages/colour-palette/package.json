@@ -3,6 +3,6 @@
   "description": "A colour palette (branding)",
   "version": "0.0.1",
   "things": {
-    "status": "wip"
+    "status": "stable"
   }
 }
