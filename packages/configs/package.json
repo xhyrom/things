@@ -4,5 +4,8 @@
   "version": "0.1.0",
   "things": {
     "status": "beta"
+  },
+  "optionalDependencies": {
+    "tsup": "^7.0.0"
   }
 }
