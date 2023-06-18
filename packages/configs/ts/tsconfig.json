@@ -42,6 +42,8 @@
     "allowUnreachableCode": false,
     // Report an error for unused labels instead of just a warning.
     "allowUnusedLabels": false,
+    // Allows to use the .ts extension in imports
+    "allowImportingTsExtensions": true,
 
     // Allows to use decorators, more info: https://github.com/tc39/proposal-decorators
     "experimentalDecorators": true
