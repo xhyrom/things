@@ -2,11 +2,18 @@
   "name": "things",
   "version": "0.0.0",
   "license": "Apache-2.0",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-angular": "^17.0.0",
+    "@jscutlery/semver": "^3.0.0",
+    "husky": "^8.0.0",
     "ngx-deploy-npm": "^6.0.0",
     "nx": "16.3.2",
     "nx-cloud": "latest"
-  }
+  },
+  "dependencies": {}
 }

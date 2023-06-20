@@ -1,5 +1,5 @@
 {
-  "name": "configs",
+  "name": "lists",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "targets": {
@@ -14,7 +14,7 @@
       "executor": "ngx-deploy-npm:deploy",
       "options": {
         "access": "public",
-        "distFolderPath": "packages/configs"
+        "distFolderPath": "packages/lists"
       }
     },
     "github": {

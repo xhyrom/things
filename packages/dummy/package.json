@@ -1,7 +1,8 @@
 {
-  "name": "dummy",
+  "name": "@xhyrom/dummy",
   "description": "This is a dummy package, it does nothing.",
   "version": "0.0.0",
+  "private": true,
   "things": {
     "status": "wip"
   }
