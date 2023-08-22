@@ -1,0 +1,27 @@
+name: Release
+on:
+  release:
+    types: [ released ]
+
+jobs:
+  steps:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Publish
+        run: |
+          pnpm nx deploy configs
+          pnpm nx deploy colour-palette
