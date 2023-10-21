@@ -1,7 +1,6 @@
 name: Release
 on:
-  release:
-    types: [ released ]
+  workflow_dispatch:
 
 jobs:
   steps:
@@ -16,7 +15,14 @@ jobs:
 
       - name: Publish
         run: |
-          pnpm nx version configs
-          pnpm nx version colour-palette
+          npx nx version configs
+          npx nx version colour-palette
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      - name: Push to protected branch
+        uses: CasperWA/push-protected@v2.14.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+          tags: true
