@@ -23,7 +23,7 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "angular",
-        "commitMessageFormat": "release(${projectName}): release version ${version}"
+        "commitMessageFormat": "release({projectName}): release version {version}"
       }
     }
   }
