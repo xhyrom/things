@@ -29,7 +29,7 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "angular",
-        "postTargets": ["configs:deploy"]
+        "postTargets": ["configs:deploy"],
         "versionTagPrefix": "configs@"
       }
     }
