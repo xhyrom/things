@@ -1,6 +1,7 @@
 {
   "name": "lists",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoots": "packages/lists/src",
   "projectType": "library",
   "targets": {
     "build": {
@@ -27,7 +28,9 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
-        "preset": "angular"
+        "preset": "angular",
+        "postTargets": ["lists:deploy"],
+        "versionTagPrefix": "lists@"
       }
     }
   }

@@ -11,21 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
-      - uses: actions/setup-node@v3
-        with:
-          cache: pnpm
-
       - name: Install dependencies
-        run: pnpm install
+        uses: ./.github/actions/setup
 
       - name: Publish
         run: |
-          pnpm nx deploy configs
-          pnpm nx deploy colour-palette
+          pnpm nx version configs
+          pnpm nx version colour-palette
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

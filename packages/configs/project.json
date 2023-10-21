@@ -1,6 +1,7 @@
 {
   "name": "configs",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/configs/src",
   "projectType": "library",
   "targets": {
     "build": {
@@ -27,7 +28,9 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
-        "preset": "angular"
+        "preset": "angular",
+        "postTargets": ["configs:deploy"]
+        "versionTagPrefix": "configs@"
       }
     }
   }

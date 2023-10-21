@@ -1,6 +1,7 @@
 {
   "name": "colour-palette",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/colour-palette/src",
   "projectType": "library",
   "targets": {
     "build": {
@@ -27,7 +28,9 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
-        "preset": "angular"
+        "preset": "angular",
+        "postTargets": ["colour-palette:deploy"],
+        "versionTagPrefix": "colour-palette@"
       }
     }
   }
