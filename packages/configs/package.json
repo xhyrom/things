@@ -2,9 +2,7 @@
   "name": "@xhyrom/configs",
   "description": "configuration files for eslint, prettier, typescript, tailwind, tsup",
   "version": "0.1.1",
-  "#things": {
-    "status": "beta"
-  },
+  "license": "Apache-2.0",
   "optionalDependencies": {
     "tailwindcss": "^3.3.2",
     "tsup": "^7.0.0",
