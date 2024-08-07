@@ -29,4 +29,18 @@ A collection of utilities and configuration files for making your life easier an
 | Name | Version | Description |
 | ---- | ------- | ----------- |
 $(echo -e "$PACKAGES_TABLE")
+
+## Contributing
+
+To contribute to this project, please follow the [standard Git workflow](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#The-Standard-Git-Workflow) and [CONTRIBUTING](./CONTRIBUTING).
+
+1. Fork this repository
+2. Create a new branch for your changes: `git checkout -b my-feature`
+3. Commit your changes: `git commit -am "Add my feature"`
+4. Push the branch: `git push origin my-feature`
+5. Open a pull request
+
+## License
+
+This project is licensed under the [Apache-2.0 License](LICENSE).
 EOL
