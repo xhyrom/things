@@ -1,0 +1,8 @@
+[providers]
+[providers.sourcehut]
+ssh = "git@git.sr.ht:~hyro/things"
+primary = true
+[providers.github]
+ssh = "git@github.com:xhyrom/things.git"
+[providers.codeberg]
+ssh = "git@codeberg.org:xHyroM/things.git"
