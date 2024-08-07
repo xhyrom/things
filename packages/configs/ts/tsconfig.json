@@ -4,7 +4,7 @@
     "strict": true,
     // Enable top-level await, and other modern ESM features.
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "NodeNext",
     // Enable node-style module resolution, for things like npm package imports.
     "moduleResolution": "node",
     // Enable JSON imports.
@@ -45,9 +45,6 @@
     // Allows to use the .ts extension in imports
     "allowImportingTsExtensions": true,
     // Allows to use JavaScript files
-    "allowJs": true,
-
-    // Allows to use decorators, more info: https://github.com/tc39/proposal-decorators
-    "experimentalDecorators": true
+    "allowJs": true
   }
 }

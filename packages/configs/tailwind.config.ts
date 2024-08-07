@@ -5,7 +5,7 @@ export default (
   options: Partial<{
     colors?: Record<string, string>;
   }> &
-    Config
+    Config,
 ): Config => ({
   theme: {
     extend: {

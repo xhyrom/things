@@ -17,7 +17,7 @@ export function createTsupConfig(
     dts: true,
     sourcemap: true,
     esbuildPlugins: [],
-  } as Options
+  } as Options,
 ) {
   return defineConfig(options);
 }
