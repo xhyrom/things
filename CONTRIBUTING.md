@@ -3,6 +3,7 @@
 ```sh
 $ curl -fsSL https://moonrepo.dev/install/moon.sh | bash
 $ curl -fsSL https://bun.sh/install | bash
+$ moon :install
 ```
 
 ## <a name="running-tasks"></a>Running Tasks
