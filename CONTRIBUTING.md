@@ -11,7 +11,7 @@ $ curl -fsSL https://bun.sh/install | bash
 $ moon :task_name
 ```
 
-> **Note** \
+> [!IMPORTANT] \
 > Keep the `:`, that's not a part of the task name!
 
 ## <a name="commit"></a> Commit Message Format
