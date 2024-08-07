@@ -18,7 +18,7 @@ A collection of utilities and configuration files for making your life easier an
 
 ## Contributing
 
-To contribute to this project, please follow the [standard Git workflow](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#The-Standard-Git-Workflow) and [CONTRIBUTING](./CONTRIBUTING).
+To contribute to this project, please follow the [standard Git workflow](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#The-Standard-Git-Workflow) and [CONTRIBUTING](./CONTRIBUTING.md).
 
 1. Fork this repository
 2. Create a new branch for your changes: `git checkout -b my-feature`
