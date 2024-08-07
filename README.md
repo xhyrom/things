@@ -3,7 +3,12 @@
   * If you want to change anything, do so in the project-readme.sh script
 -->
 
-**🧺 Things** repository is a collection of utilities and configuration files for making your life easier and reduce boilerplate.
+<h1 align="center">
+  🧺 Things
+</h1>
+<p align="center">
+A collection of utilities and configuration files for making your life easier and reduce boilerplate.
+</p>
 
 ### Packages
 | Name | Version | Description |
