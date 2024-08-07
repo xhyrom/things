@@ -1,3 +1,20 @@
+## <a name="install-dependencies"></a>Install Dependencies
+
+```sh
+$ curl -fsSL https://moonrepo.dev/install/moon.sh | bash
+$ curl -fsSL https://bun.sh/install | bash
+$ moon :install
+```
+
+## <a name="running-tasks"></a>Running Tasks
+
+```sh
+$ moon :task_name
+```
+
+> [!IMPORTANT]
+> Keep the `:`, that's not a part of the task name!
+
 ## <a name="commit"></a> Commit Message Format
 
 _This specification is inspired by and supersedes the [Brainclements commit message format](https://gist.github.com/brianclements/841ea7bffdb01346392c)._
@@ -25,32 +42,31 @@ The `footer` is optional. The [Commit Message Footer](#commit-footer) format des
 #### <a name="commit-header"></a>Commit Message Header
 
 ```
-<type>(!?): <short summary>
-  │     │        │
-  │     │        └─⫸ Summary in present tense. Not capitalized. No period at the end.
-  │     │
-  │     └─⫸ Exclamation mark: breaking change
+<type>(<scope>)(!?): <short summary>
+  │       │      │      │
+  │       │      │      └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       │      │
+  │       │      └─⫸ Exclamation mark: breaking change
+  │       │
+  │       └─⫸ Commit Scope
   │
   └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
 ```
 
-The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.  
+The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
 Exclamation mark is optional too, but it's used to mark breaking changes.
 
 ##### Type
 
 Must be one of the following:
 
-- **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-- **ci**: Changes to our CI configuration files and scripts (examples: CircleCi, SauceLabs)
+- **build**: Changes that affect the build system or external dependencies
+- **ci**: Changes to our CI configuration files and scripts
 - **docs**: Documentation only changes
 - **feat**: A new feature
 - **fix**: A bug fix
 - **perf**: A code change that improves performance
 - **refactor**: A code change that neither fixes a bug nor adds a feature
-- **release**: A release commit
-- **revert**: Reverts a previous commit (see [Revert commits](#revert-commits))
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - **test**: Adding missing tests or correcting existing tests
 
 ##### Summary

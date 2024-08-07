@@ -695,4 +695,8 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
+# moon
+.moon/cache
+.moon/docker
+
 # End of https://www.toptal.com/developers/gitignore/api/node,go,rust,java,kotlin,visualstudiocode,intellij,intellij+iml,intellij+all,webstorm,webstorm+iml,webstorm+all,dotenv,gradle,maven

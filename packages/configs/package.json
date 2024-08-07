@@ -1,13 +1,14 @@
 {
   "name": "@xhyrom/configs",
-  "description": "Personal configurations for my projects, currently for TypeScript, Prettier and tsup",
+  "description": "configuration files for eslint, prettier, typescript, tailwind, tsup",
   "version": "0.1.1",
-  "things": {
-    "status": "beta"
-  },
+  "license": "Apache-2.0",
   "optionalDependencies": {
     "tailwindcss": "^3.3.2",
     "tsup": "^7.0.0",
-    "@xhyrom/colour-palette": "*"
+    "@xhyrom/configs": "workspace:*"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
   }
 }
