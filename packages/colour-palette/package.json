@@ -1,8 +1,8 @@
 {
   "name": "@xhyrom/colour-palette",
-  "description": "A colour palette (branding)",
+  "description": "colors that i use",
   "version": "0.1.0",
-  "things": {
+  "#things": {
     "status": "stable"
   }
 }
