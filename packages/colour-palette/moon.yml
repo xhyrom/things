@@ -1,0 +1,9 @@
+type: "library"
+
+project:
+  name: "colour-palette"
+  description: "colors that i use"
+
+tasks:
+  build:
+    command: "echo 'ahoj'"

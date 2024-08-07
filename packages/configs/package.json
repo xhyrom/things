@@ -8,6 +8,6 @@
   "optionalDependencies": {
     "tailwindcss": "^3.3.2",
     "tsup": "^7.0.0",
-    "@xhyrom/colour-palette": "*"
+    "@xhyrom/configs": "workspace:*"
   }
 }
