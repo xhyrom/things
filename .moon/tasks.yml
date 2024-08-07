@@ -1,7 +1,7 @@
 tasks:
   install:
     command: "bun install"
-  package-readme:
+  readme:
     command: "$PWD/scripts/package-readme.sh"
     inputs:
       - "package.json"

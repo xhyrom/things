@@ -1,0 +1,10 @@
+tasks:
+  readme:
+    command: "$PWD/scripts/project-readme.sh"
+    inputs:
+      - "packages/**/moon.yml"
+      - "scripts/project-readme.sh"
+
+workspace:
+  inheritedTasks:
+    include: []
