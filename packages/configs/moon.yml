@@ -4,7 +4,3 @@ language: "typescript"
 project:
   name: "configs"
   description: "configuration files for eslint, prettier, typescript, tailwind, tsup"
-
-tasks:
-  build:
-    command: "echo 'ahoj'"
