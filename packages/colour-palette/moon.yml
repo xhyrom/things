@@ -3,3 +3,7 @@ type: "library"
 project:
   name: "colour-palette"
   description: "colors that i use"
+
+tasks:
+  format:
+    command: "prettier --check ."

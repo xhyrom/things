@@ -2,5 +2,8 @@
   "name": "@xhyrom/colour-palette",
   "description": "colors that i use",
   "version": "0.1.0",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
 }
