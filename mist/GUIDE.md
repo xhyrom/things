@@ -34,6 +34,7 @@ A guide on the correct usage of the mist palette
         <th colspan="3" align="center"><h4>All</h4></th>
     </tr>
     <tr>
+        <th>Name</th>
         <th colspan="2">Color</th>
     </tr>
     <tr>
